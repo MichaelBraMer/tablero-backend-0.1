@@ -132,7 +132,7 @@ class Game {
                     return {
                         ...game,
                         turno: game.turno++,
-                        juego: game.juego++
+                        juego: Math.round(Math.random() * (121 - 0) + 0)
                     }
                 }
                 console.log('else', {
@@ -145,7 +145,7 @@ class Game {
                     ...game,
                     ronda: game.ronda++,
                     turno: 1,
-                    juego: game.juego++
+                    juego: Math.round(Math.random() * (121 - 0) + 0)
                 }
                 return juego;
 
